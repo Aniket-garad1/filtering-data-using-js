@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div style="padding: 20px">
+      <p style="margin: 10px 0px">Filter ui cards via there Profession</p>
+      <select>
+        <option value="">Profession</option>
+        <option value="admin">Admin</option>
+        <option value="developer">Developer</option>
+      </select>
+      <div class="user-cards-container" id="cards-container">
+
+        <!-- <div class="user-card">
+          <p>1.</p>
+          <p>Name:<b>John</b></p>
+          <p>Profession:<b>Developer</b></p>
+          <p>Age:<b>18</b></p>
+        </div> -->
+
+      </div>
+      <button id="filter">Filter</button>
+
+      <div class="add-user-container">
+        <p style="margin: 20px 10px;">Add new User</p>
+        <form id="user-form">
+          <div class="input-list">
+            <div class="input-container">
+              <label for="name">Enter Name</label>
+              <input type="text"name="name"  required placeholder="Name" id="name" />
+            </div>
+            <div class="input-container">
+              <label for="profession">Enter Profession</label>
+              <input type="text"name="profession" required placeholder="profession" id="profession" />
+            </div>
+            <div class="input-container">
+              <label for="age">Enter age</label>
+              <input type="text"name="age" required placeholder="age" id="age" />
+            </div>
+          </div>
+          <button type="submit" id="add-user-button">Add user</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="style.js"></script>
+  </body>
+</html>
